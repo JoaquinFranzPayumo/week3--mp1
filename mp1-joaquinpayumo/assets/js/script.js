@@ -4,7 +4,8 @@ let txtOutput = document.querySelector('#txtOutput');
 
 btnReplaceAll.addEventListener("click", function(){
     let str1 = txtInput.value;
-    let output = str1.replace(" ", "", "");
+    let output = str1.replace(/\s+, "");
     console.log(output);
     txtOutput.innerText = output;
+
 });
